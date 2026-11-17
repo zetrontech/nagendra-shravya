@@ -1,0 +1,40 @@
+import { useState } from 'react'
+import { motion, useReducedMotion } from 'framer-motion'
+import { FlowerLotus } from '@phosphor-icons/react'
+
+// "Open our invitation" card shown over the intro video.
+export default function WelcomeCard({ onDone }) {
+  const reduce = useReducedMotion()
+  const [open, setOpen] = useState(false)
+  return (
+    <motion.div
+      className={'welcome-card ' + (open ? 'is-open' : '')}
+      animate={open && !reduce ? { scale: 1.04, opacity: 0 } : {}}
+      transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+    >
+      <div className="welcome-names">
+        <small>Together with our families</small>
+        <h1>
+          Nagendra <i>&amp;</i> Shravya
+        </h1>
+        <p>invite you to celebrate their engagement</p>
+        <span>03 · 12 · 2026</span>
+      </div>
+      <motion.button
+        aria-label="Open Nagendra and Shravya's invitation"
+        className="open-invite"
+        onClick={() => {
+          setOpen(true)
+          onDone()
+        }}
+        whileTap={{ scale: 0.97 }}
+      >
+        <span className="seal">
+          <FlowerLotus size={25} weight="fill" />
+        </span>
+        <b>Open our invitation</b>
+        <small>Tap to enter</small>
+      </motion.button>
+    </motion.div>
+  )
+}
