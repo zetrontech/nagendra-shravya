@@ -128,7 +128,6 @@ export default function App() {
           <video
             ref={video}
             className="welcome-video"
-            muted
             playsInline
             preload="auto"
             poster={media.openingPoster}
