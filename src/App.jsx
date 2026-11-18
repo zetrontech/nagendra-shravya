@@ -132,7 +132,7 @@ export default function App() {
             preload="auto"
             poster={media.openingPoster}
             onEnded={() => setIntroDone(true)}
-            aria-label="Shiva and Parvati joining hands, the opening of Nagendra and Shravya's engagement invitation"
+            aria-label="A temple gopuram and Lord Vishnu with Goddess Lakshmi, the opening of Nagendra and Sravya's engagement invitation"
           >
             <source src={media.openingVideo} type="video/mp4" />
           </video>
@@ -151,7 +151,7 @@ export default function App() {
         <motion.img
           className="hero-art"
           src={media.hero}
-          alt="Lord Shiva and Goddess Parvati joining hands before a South Indian temple, with a couple seated in pooja below"
+          alt="Two hands clasped before a South Indian temple, with a couple seated in pooja below"
           style={{ y: reduce ? 0 : heroY }}
         />
         <div className="hero-scrim" />
@@ -161,15 +161,10 @@ export default function App() {
           animate={{ opacity: +!!introDone, y: introDone ? 0 : 24 }}
           transition={{ delay: 0.15, duration: 1 }}
         >
-          <p className="blessing">Blessed by Lord Shiva &amp; Goddess Parvati</p>
+          <p className="blessing">Blessed by Lord Vishnu &amp; Goddess Lakshmi</p>
           <h1>
             {couple.groom} <span>&amp;</span> {couple.bride}
           </h1>
-          <div className="date-rule">
-            <i />
-            03 · 12 · 2026
-            <i />
-          </div>
           <p>Engagement · {venue.city}</p>
         </motion.div>
         <motion.div className="leaf-float left" style={{ y: reduce ? 0 : leafY }} />
@@ -196,7 +191,7 @@ export default function App() {
           <p className="script">A union blessed by the divine</p>
           <h2>Two hearts, one blessing</h2>
           <p>
-            With the blessings of Lord Shiva and Goddess Parvati, and with the love of our families, we joyfully invite you to witness the beginning of our journey together.
+            With the blessings of Lord Vishnu and Goddess Lakshmi, and with the love of our families, we joyfully invite you to witness the beginning of our journey together.
           </p>
           <div className="families">
             <div>
@@ -223,7 +218,7 @@ export default function App() {
         <div className="floating-diya">◒</div>
         <Reveal className="ceremony-head">
           <p className="script">The first blessing</p>
-          <h2>Pooja begins at 8:48 AM</h2>
+          <h2>Ganesh Pooja begins at 8:48 AM</h2>
           <p>A quiet, sacred start to our engagement day.</p>
         </Reveal>
         <div className="ceremony-pair">
@@ -267,6 +262,7 @@ export default function App() {
                 <span className="event-icon">{e.icon}</span>
                 <h3>{e.name}</h3>
                 <p>{e.note}</p>
+                {e.image && <img className="event-photo" src={media[e.image]} loading="lazy" alt="Banana leaf served with a traditional banthi bhojanam" />}
                 <dl>
                   <div><dt>Date</dt><dd>{e.date}</dd></div>
                   <div><dt>Time</dt><dd>{e.time}</dd></div>
@@ -319,7 +315,7 @@ export default function App() {
       </section>
 
       <footer>
-        <img src={media.footer} loading="lazy" alt="Shiva and Parvati joining hands" />
+        <img src={media.footer} loading="lazy" alt="Two hands clasped before a South Indian temple" />
         <div className="footer-overlay" />
         <Reveal className="footer-copy">
           <Sparkle size={27} weight="thin" />

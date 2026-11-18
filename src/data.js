@@ -3,9 +3,9 @@ export const WEDDING_DATE = new Date('2026-12-03T08:48:00+05:30')
 
 export const couple = {
   groom: 'Nagendra',
-  bride: 'Shravya',
+  bride: 'Sravya',
   groomFull: 'Nagendra Singamreddy',
-  brideFull: 'Dr. Shravya Reddy Kovvuri',
+  brideFull: 'Dr. Sravya Reddy Kovvuri',
   groomParents: 'Mr. Nageswara Reddy & Mrs. Chinnari',
   brideParents: 'Mr. Venkat Reddy & Mrs. Sridevi',
 }
@@ -13,11 +13,12 @@ export const couple = {
 export const media = {
   openingVideo: '/media/nagendra-shravya-opening.mp4',
   openingPoster: '/images/opening-first-frame.jpg',
-  hero: '/images/hero-shiva-parvati.jpg',
+  hero: '/images/hero-clasped-hands.jpg',
   poojaBride: '/images/pooja-bride.jpg',
   poojaGroom: '/images/pooja-groom.jpg',
   ring: '/images/ring-couple.jpg',
-  footer: '/images/hero-shiva-parvati.jpg',
+  footer: '/images/hero-clasped-hands.jpg',
+  lunch: '/images/lunch-banana-leaf.jpg',
 }
 
 export const venue = {
@@ -27,9 +28,9 @@ export const venue = {
 }
 
 export const events = [
-  { name: 'Pooja', date: 'Thursday, 3 December 2026', time: '8:48 AM', venue: 'A Plus Convention, Vijayawada', note: 'A sacred beginning, with the blessings of Lord Shiva and Goddess Parvati.', icon: '❋' },
+  { name: 'Ganesh Pooja', date: 'Thursday, 3 December 2026', time: '8:48 AM', venue: 'A Plus Convention, Vijayawada', note: 'Here we start with Ganesh Pooja, a sacred beginning with the blessings of Lord Vishnu and Goddess Lakshmi.', icon: '❋' },
   { name: 'Ring Ceremony', date: 'Thursday, 3 December 2026', time: '9:00 AM', venue: 'A Plus Convention, Vijayawada', note: 'Followed by the exchange of rings, the moment two families become one.', icon: '✦' },
-  { name: 'Lunch', date: 'Thursday, 3 December 2026', time: 'Following the ceremony', venue: 'A Plus Convention, Vijayawada', note: 'Lunch follows. Join us to share a festive meal.', icon: '❧' },
+  { name: 'Lunch', date: 'Thursday, 3 December 2026', time: 'Following the ceremony', venue: 'A Plus Convention, Vijayawada', note: 'Join the celebration with a delicious banthi bhojanam.', icon: '❧', image: 'lunch' },
 ]
 
 // Floating lantern atmosphere: position (%), parallax depth, scale, blur (px).

@@ -15,13 +15,12 @@ export default function WelcomeCard({ onDone }) {
       <div className="welcome-names">
         <small>Together with our families</small>
         <h1>
-          Nagendra <i>&amp;</i> Shravya
+          Nagendra <i>&amp;</i> Sravya
         </h1>
         <p>invite you to celebrate their engagement</p>
-        <span>03 · 12 · 2026</span>
       </div>
       <motion.button
-        aria-label="Open Nagendra and Shravya's invitation"
+        aria-label="Open Nagendra and Sravya's invitation"
         className="open-invite"
         onClick={() => {
           setOpen(true)
