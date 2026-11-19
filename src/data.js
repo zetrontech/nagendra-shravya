@@ -28,7 +28,7 @@ export const venue = {
 }
 
 export const events = [
-  { name: 'Ganesh Pooja', date: 'Thursday, 3 December 2026', time: '8:48 AM', venue: 'A Plus Convention, Vijayawada', note: 'Here we start with Ganesh Pooja, a sacred beginning with the blessings of Lord Vishnu and Goddess Lakshmi.', icon: '❋' },
+  { name: 'Pooja', date: 'Thursday, 3 December 2026', time: '8:48 AM', venue: 'A Plus Convention, Vijayawada', note: 'A sacred beginning, with the blessings of Lord Vishnu and Goddess Lakshmi.', icon: '❋' },
   { name: 'Ring Ceremony', date: 'Thursday, 3 December 2026', time: '9:00 AM', venue: 'A Plus Convention, Vijayawada', note: 'Followed by the exchange of rings, the moment two families become one.', icon: '✦' },
   { name: 'Lunch', date: 'Thursday, 3 December 2026', time: 'Following the ceremony', venue: 'A Plus Convention, Vijayawada', note: 'Join the celebration with a delicious banthi bhojanam.', icon: '❧', image: 'lunch' },
 ]

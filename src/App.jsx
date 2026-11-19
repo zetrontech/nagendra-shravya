@@ -171,7 +171,7 @@ export default function App() {
         <motion.div className="leaf-float right" style={{ y: reduce ? 0 : leafY }} />
         <div className="scroll-cue">
           <ArrowDown size={20} />
-          <span>Our engagement</span>
+          <span>Scroll down</span>
         </div>
       </section>
 
@@ -218,7 +218,7 @@ export default function App() {
         <div className="floating-diya">◒</div>
         <Reveal className="ceremony-head">
           <p className="script">The first blessing</p>
-          <h2>Ganesh Pooja begins at 8:48 AM</h2>
+          <h2>Pooja begins at 8:48 AM</h2>
           <p>A quiet, sacred start to our engagement day.</p>
         </Reveal>
         <div className="ceremony-pair">

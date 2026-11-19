@@ -22,3 +22,10 @@
 .families b{font-family:"Playfair Display",Georgia,serif;font-weight:700;font-size:21px}
 .ceremony-pair{max-width:760px}.ceremony-pair .ceremony-image{max-width:320px;margin-inline:auto;width:100%}.ceremony-pair.single .ceremony-image{max-width:360px}
 .event-photo{display:block;width:100%;max-width:420px;border-radius:14px;margin:0 0 20px;box-shadow:0 10px 26px #4a2b1733;border:1px solid #b9781640}
+
+.scroll-cue{bottom:14px;padding:8px 16px 6px;border-radius:999px;background:#4a2410d9;color:#fff6dc;text-shadow:none;box-shadow:0 4px 16px #2a170c55;border:1px solid #fff6dc55;animation:cueBob 1.8s ease-in-out infinite}.scroll-cue span{font:700 11px Marcellus,serif;letter-spacing:.2em}.scroll-cue svg{stroke-width:2}
+@keyframes cueBob{50%{transform:translateY(5px)}}
+.flip span{font:800 36px "Playfair Display",Georgia,serif}.count-unit small{font-weight:700;font-size:9px;color:#fff1cf}
+.date-reveal b{font:900 92px/.9 "Playfair Display",Georgia,serif}.date-reveal span{font:700 20px "Playfair Display",Georgia,serif}.date-reveal small{font-weight:700;font-size:11px}
+.event-number{font:800 19px "Playfair Display",Georgia,serif}.event dd{font:700 14px "Playfair Display",Georgia,serif;color:#3a1f0e}.event dt{font-weight:700;color:#7d4a18}
+.date-rule{font-weight:700}
